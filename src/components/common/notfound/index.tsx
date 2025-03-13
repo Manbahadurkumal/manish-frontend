@@ -1,0 +1,46 @@
+// export default function NotFound() {
+//     return (
+//       <>
+        
+//         <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+//           <div className="text-center">
+//             <p className="text-base font-semibold text-indigo-600">404</p>
+//             <h1 className="mt-4 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+//               Page not found
+//             </h1>
+//             <p className="mt-6 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+//               Sorry, we couldn’t find the page you’re looking for.
+//             </p>
+//             <div className="mt-10 flex items-center justify-center gap-x-6">
+//               <a
+//                 href="/home"
+//                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+//               >
+//                 Go back home
+//               </a>
+//             </div>
+//           </div>
+//         </main>
+//       </>
+//     )
+//   }
+  
+
+import { NotFound, Illustration } from "@/components/ui/not-found"
+
+function Notfoundpage() {
+  return (
+    <div className="relative flex flex-col w-full justify-center min-h-svh bg-background p-6 md:p-10">
+      <div className="relative max-w-5xl mx-auto w-full">
+        <Illustration className="absolute inset-0 w-full h-[50vh] opacity-[0.04] dark:opacity-[0.03] text-foreground" />
+        <NotFound
+          title="Page not found"
+          description="Sorry, we couldn’t find the page you’re looking for."
+        />
+      </div>
+    </div>
+  )
+}
+
+
+export { Notfoundpage }
