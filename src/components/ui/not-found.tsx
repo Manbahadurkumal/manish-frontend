@@ -1,6 +1,6 @@
-import { Search, ArrowLeft } from "lucide-react"
+// import { Search, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/notfound/button"
-import { Input } from "@/components/ui/notfound/input"
+// import { Input } from "@/components/ui/notfound/input"
 
 interface NotFoundProps {
   title?: string
