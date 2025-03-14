@@ -21,9 +21,9 @@ const RoutingConfig = () =>{
         <Routes>
             <Route path = "/" element = {<HomeLayout/>}>
                 <Route index element = {<LandingPage />}></Route>
-                <Route path="home" element={<LandingPage />}></Route>
-                {/* <Route path="projects" element={<SocketExample />}></Route>
-                <Route path="contacts" element={<RegisterPage />}></Route> */}
+                <Route path="home" element={<CoverDemo />}></Route>
+                <Route path="projects" element={<CoverDemo />}></Route>
+                <Route path="contacts" element={<CoverDemo />}></Route> 
                 <Route path="hireme" element={<CoverDemo />}></Route>
                 <Route path="*" element={<Notfoundpage />}></Route>
 
