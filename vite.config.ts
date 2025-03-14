@@ -19,4 +19,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1000, // Set a higher limit (e.g., 1000 kB)
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"], // Separate large dependencies
+        },
+      },
+    },
+  },
 })
