@@ -22,7 +22,7 @@ export function HeroHighlightDemo() {
       >
         Hello, it's me Manish Kumal{" "}
         <Highlight className="text-black dark:text-white">
-          Web developer and 
+          Web developer and Nursing Student
         </Highlight>
       </motion.h1>
     </HeroHighlight>

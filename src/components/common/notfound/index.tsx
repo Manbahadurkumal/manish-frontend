@@ -26,7 +26,7 @@
 //   }
   
 
-import { NotFound, Illustration } from "@/components/ui/not-found"
+import { NotFound, Illustration } from "@/components/ui/notfound/not-found"
 
 function Notfoundpage() {
   return (

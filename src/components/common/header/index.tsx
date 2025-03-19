@@ -55,16 +55,16 @@ export default function HeaderComponent() {
           <Link  to="/home" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
             Home
           </Link>
-
+          <Link  to="/about" className="text-sm/6 font-semibold text-gray-900 dark:text-white" >
+          About
+          </Link>
           <Link  to="/projects" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
             Projects
           </Link>
           <Link  to="/contact" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
             Contact
           </Link>
-          <Link  to="/hireme" className="text-sm/6 font-semibold text-gray-900 dark:text-white" >
-          hireme
-          </Link>
+          
           
         </PopoverGroup>
         
@@ -108,6 +108,12 @@ export default function HeaderComponent() {
                   Home
                 </Link>
                 <Link 
+                  to="/about"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-white hover:bg-black"
+                >
+                HAbout
+                </Link>
+                <Link 
                   to="/projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-white hover:bg-black"
                 >
@@ -119,12 +125,7 @@ export default function HeaderComponent() {
                 >
                   Contact
                 </Link>
-                <Link 
-                  to="hireme"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 dark:text-white hover:bg-black"
-                >
-                Hire Me
-                </Link>
+                
               </div>
               {/* <div className="py-6">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">

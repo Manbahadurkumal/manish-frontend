@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/footer/button"
 import { Input } from "@/components/ui/footer/input"
 import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
+import { Link } from "react-router-dom"
 // import { Textarea } from "@/components/ui/textarea"
 import {
   Tooltip,
@@ -31,7 +32,7 @@ function Footerdemo() {
           <div className="relative">
             <h2 className="mb-4 text-3xl font-bold tracking-tight">Stay Connected</h2>
             <p className="mb-6 text-muted-foreground">
-              Join our newsletter for the latest updates and exclusive offers.
+              Please leave your email.
             </p>
             <form className="relative">
               <Input
@@ -53,21 +54,19 @@ function Footerdemo() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <nav className="space-y-2 text-sm">
-              <a href="/home" className="block transition-colors hover:text-primary">
+              <Link to="/home" className="block transition-colors hover:text-primary">
                 Home
-              </a>
-              <a href="/about me" className="block transition-colors hover:text-primary">
-                About me
-              </a>
-              <a href="/hireme" className="block transition-colors hover:text-primary">
-                Hire me
-              </a>
-              <a href="/projects" className="block transition-colors hover:text-primary">
-                Projects
-              </a>
-              <a href="/contact" className="block transition-colors hover:text-primary">
+              </Link>
+              <Link to="/about" className="block transition-colors hover:text-primary">
+                About
+              </Link>
+              <Link to="/contact" className="block transition-colors hover:text-primary">
                 Contact
-              </a>
+              </Link>
+              <Link to="/projects" className="block transition-colors hover:text-primary">
+                Projects
+              </Link>
+              
             </nav>
           </div>
           <div>
@@ -149,21 +148,10 @@ function Footerdemo() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
+        <div className="mt-12 gap-4 border-t pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Your Company. All rights reserved.
+            © 2025 Manish Kumal. All rights reserved.
           </p>
-          <nav className="flex gap-4 text-sm">
-            <a href="#" className="transition-colors hover:text-primary">
-              Privacy Policy
-            </a>
-            <a href="#" className="transition-colors hover:text-primary">
-              Terms of Service
-            </a>
-            <a href="#" className="transition-colors hover:text-primary">
-              Cookie Settings
-            </a>
-          </nav>
         </div>
       </div>
     </footer>

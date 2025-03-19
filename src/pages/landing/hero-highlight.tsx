@@ -27,10 +27,10 @@ export const HeroHighlight = ({
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
   }
-  return (
+  return (<div className="flex">
     <div
       className={cn(
-        "relative md:h-[20rem] lg:h-[30rem] flex items-center bg-white dark:bg-black justify-center w-full group",
+        "relative md:h-[20rem] lg:h-[30rem] flex items-center bg-white dark:bg-black justify-center lg:w-1/2 group",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
@@ -59,6 +59,8 @@ export const HeroHighlight = ({
       />
 
       <div className={cn("relative z-20", className)}>{children}</div>
+    </div>
+    <div className="float-right">HEEEe</div>
     </div>
   );
 };
