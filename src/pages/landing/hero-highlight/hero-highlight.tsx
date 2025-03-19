@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
+import { IconCloudDemo } from "../3d-icon";
 
 export const HeroHighlight = ({
   children,
@@ -27,10 +28,10 @@ export const HeroHighlight = ({
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
   }
-  return (<div className="flex">
+  return (<div className="lg:flex">
     <div
       className={cn(
-        "relative md:h-[20rem] lg:h-[30rem] flex items-center bg-white dark:bg-black justify-center lg:w-1/2 group",
+        "relative md:h-[20rem] lg:h-[30rem] flex items-center bg-white dark:bg-background justify-center lg:w-1/2 group",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
@@ -60,7 +61,7 @@ export const HeroHighlight = ({
 
       <div className={cn("relative z-20", className)}>{children}</div>
     </div>
-    <div className="float-right">HEEEe</div>
+    <div className="m-2"><IconCloudDemo/></div>
     </div>
   );
 };

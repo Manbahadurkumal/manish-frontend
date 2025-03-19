@@ -1,6 +1,6 @@
 // import img from "next/img";
 // import React from "react";
-import { Timeline } from "../../pages/landing/timeline/timeline";
+import { Timeline } from "./timeline";
 
 export function TimelineDemo() {
   const data = [
