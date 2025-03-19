@@ -17,7 +17,11 @@ const SEO: React.FC<SEOProps> = ({ title, description, image = "/default-image.p
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="keywords" content="Manish Kumal, Web Developer, Portfolio, Future Nurse, MERN Stack, Healthcare IT, Personal Website, Protfolio example" />
+      
+      <meta name="author" content="Manish Kumal" />
       <link rel="canonical" href={url} />
+      <link rel="icon" type="image/png" href="/manish.png" />
     </Helmet>
   );
 };
