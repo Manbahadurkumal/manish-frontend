@@ -1,7 +1,7 @@
 import { ReactNode, useEffect } from "react";
 import { toast } from "react-toastify";
-import { TimelineDemo } from "../../components/ui/timelinedata";
-import { HeroHighlightDemo } from "./herohighlight-data";
+import { TimelineDemo } from "./timeline/timelinedata";
+import { HeroHighlightDemo } from "./hero-highlight/herohighlight-data";
 
 
 const LandingPage = (): ReactNode =>{
