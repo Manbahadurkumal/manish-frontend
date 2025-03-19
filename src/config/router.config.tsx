@@ -7,7 +7,7 @@ import  { Notfoundpage } from "../components/common/notfound"
 
 // import { LampDemo } from "../components/ui/lamp"
 // import { Cover } from "../components/ui/cover"
-import { CoverDemo } from "../pages/hireme"
+import { CoverDemo } from "../pages/projects/hireme"
 import { ToastContainer } from "react-toastify"
 
 
@@ -21,10 +21,10 @@ const RoutingConfig = () =>{
         <Routes>
             <Route path = "/" element = {<HomeLayout/>}>
                 <Route index element = {<LandingPage />}></Route>
-                <Route path="home" element={<>hi</>}></Route>
-                <Route path="projects" element={<>hi</>}></Route>
-                <Route path="contacts" element={<>hi</>}></Route> 
-                <Route path="hireme" element={<CoverDemo />}></Route>
+                <Route path="home" element={<LandingPage />}></Route>
+                <Route path="projects" element={<CoverDemo/>}></Route>
+                <Route path="contact" element={<>hi</>}></Route> 
+                <Route path="about" element={<>HI</>}></Route>
                 <Route path="*" element={<Notfoundpage />}></Route>
 
                 {/* <Route path="*" element={<NotFound />}></Route> */}
