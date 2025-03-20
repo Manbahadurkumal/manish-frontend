@@ -7,7 +7,7 @@ interface SEOProps {
   url?: string;
 }
 
-const SEO: React.FC<SEOProps> = ({ title, description, image = "/default-image.png", url = "/" }) => {
+const SEO: React.FC<SEOProps> = ({ title, description, image = "/manish.png", url = "/" }) => {
   return (
     <Helmet>
       <title>{title}</title>
@@ -23,6 +23,29 @@ const SEO: React.FC<SEOProps> = ({ title, description, image = "/default-image.p
       <meta name="google-site-verification" content="PfGwE5ibySezT2WGVJ92rOZTMLiyCsAjjWa7NKgH5Cw" />
       <link rel="canonical" href={url} />
       <link rel="icon" type="image/png" href="/manish.png" />
+      <script type="application/ld+json">
+          {JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Man Bahadur Kumal",
+  "url": "https://manbahadurkumal.com.np",
+  "author": {
+    "@type": "Person",
+    "name": "Man Bahadur Kumal",
+    "url": "https://manbahadurkumal.com.np",
+    "sameAs": [
+      "https://www.linkedin.com/in/manbahadurkumal",
+      "https://github.com/manbahadurkumal",
+      "https://twitter.com/manbahadurkumal"
+    ]
+  },
+  "description": "Personal portfolio of Man Bahadur Kumal - a web developer skilled in React, Vite, and full-stack development.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Man Bahadur Kumal"
+  }
+})}
+        </script>
     </Helmet>
   );
 };
