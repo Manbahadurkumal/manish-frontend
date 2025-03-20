@@ -39,7 +39,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, image = "/manish.png", ur
       "https://twitter.com/manbahadurkumal"
     ]
   },
-  "description": "Personal portfolio of Man Bahadur Kumal - a web developer skilled in React, Vite, and full-stack development.",
+  "description": {description},
   "publisher": {
     "@type": "Person",
     "name": "Man Bahadur Kumal"

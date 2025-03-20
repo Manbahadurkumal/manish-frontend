@@ -7,9 +7,10 @@ import { BrowserRouter } from 'react-router-dom'
 import SEO from './seo';
 
 createRoot(document.getElementById('root')!).render(
-  <HelmetProvider>
+  
   <React.StrictMode>
     <BrowserRouter>
+    <HelmetProvider>
       <SEO
       title="Manish Kumal - Web Developer & Future Nurse"
       description="Explore my work, skills, and future in healthcare and tech."
@@ -17,8 +18,8 @@ createRoot(document.getElementById('root')!).render(
       url="https://manbahadurkumal.com.np"
       />
       <RoutingConfig />
+      </HelmetProvider>
     </BrowserRouter>
     
   </React.StrictMode>
-  </HelmetProvider>
 )
