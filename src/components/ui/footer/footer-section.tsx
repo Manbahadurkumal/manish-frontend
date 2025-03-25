@@ -27,8 +27,8 @@ function Footerdemo() {
 
   return (
     <footer className="relative border-t bg-background text-foreground transition-colors duration-300">
-      <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8 flex flex-col items-center justify-around">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 ">
           <div className="relative">
             <h2 className="mb-4 text-3xl font-bold tracking-tight">Stay Connected</h2>
             <p className="mb-6 text-muted-foreground">
@@ -85,7 +85,8 @@ function Footerdemo() {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button variant="outline" size="icon" className="rounded-full">
-                      <Facebook className="h-4 w-4" />
+                      <a href="https://www.facebook.com/manishtanki100/"><Facebook className="h-4 w-4" /></a>
+                      
                       <span className="sr-only">Facebook</span>
                     </Button>
                   </TooltipTrigger>
@@ -124,7 +125,8 @@ function Footerdemo() {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button variant="outline" size="icon" className="rounded-full">
-                      <Linkedin className="h-4 w-4" />
+                      <a href="https://www.linkedin.com/in/man-bahadur-kumal/"> <Linkedin className="h-4 w-4" /></a>
+                      
                       <span className="sr-only">LinkedIn</span>
                     </Button>
                   </TooltipTrigger>

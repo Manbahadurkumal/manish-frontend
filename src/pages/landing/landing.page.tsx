@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from "react";
 import { toast } from "react-toastify";
 import { TimelineDemo } from "./timeline/timelinedata";
 import { HeroHighlightDemo } from "./hero-highlight/herohighlight-data";
+import { MarqueeDemo } from "./comment/marqueedata";
 
 
 const LandingPage = (): ReactNode =>{
@@ -21,6 +22,7 @@ const LandingPage = (): ReactNode =>{
         <>
         <HeroHighlightDemo />
         <TimelineDemo />
+        <MarqueeDemo />
         
         </>
     )
